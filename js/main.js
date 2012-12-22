@@ -1,23 +1,29 @@
-/**
+/*******************************************************************************
  * Listener for when phonegap is ready
- */
+ * 
+ ******************************************************************************/
 $(function(){
+	alert('documentReady');
 	$(document).on("deviceready", onDeviceReady);
 });
 
 
-/**
+/*******************************************************************************
  * DeviceReady event callback
- */
+ * All PhoneGap API calls should be initiated here to to ensure PhoneGap is loaded
+ * 
+ ******************************************************************************/
 function onDeviceReady() {
+	alert('deviceready');
 	//navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
-	alert('hi');
 	
 }
 
-/**
+
+/*******************************************************************************
  * Vibrates the phone for given number of milliseconds
- */
+ * 
+ ******************************************************************************/
 function vibrate(milliseconds) {
 	navigator.notification.vibrate(milliseconds);
 }
