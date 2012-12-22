@@ -10,7 +10,8 @@ $(function(){
  * DeviceReady event callback
  */
 function onDeviceReady() {
-	navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
+	//navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
+	alert('hi');
 	
 }
 
