@@ -17,9 +17,6 @@ $(function(){
  ******************************************************************************/
 function onDeviceReady() {
 	navigator.notification.alert("Let's vibrate", vibrate, "Notice", "Oh yeah!, No thanks :(");
-	alert('wait a bit');
-	vibrate(500);
-	
 }
 
 
