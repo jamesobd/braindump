@@ -19,12 +19,12 @@ function onDeviceReady() {
 	navigator.notification.confirm(
 		"Let's vibrate",
 		function(button) {
-			if (button == 1) {
+			if (button == 2) {
 				navigator.notification.vibrate(1000);
 			}
 		},
 		"Notice",
-		"Oh yeah!, No thanks :(");
+		"No thanks :(, Oh yeah!");
 }
 
 
