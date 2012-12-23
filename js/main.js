@@ -3,7 +3,6 @@
  * 
  ******************************************************************************/
 $(function(){
-	alert('documentReady');
 	$(document).on("deviceready", onDeviceReady);
 	
 	// If testing on web browser load phonegap_browsertest.js
@@ -17,8 +16,7 @@ $(function(){
  * 
  ******************************************************************************/
 function onDeviceReady() {
-	alert('deviceready');
-	//navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
+	navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
 	
 }
 
