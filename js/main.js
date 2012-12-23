@@ -5,6 +5,9 @@
 $(function(){
 	alert('documentReady');
 	$(document).on("deviceready", onDeviceReady);
+	
+	// If testing on web browser load phonegap_browsertest.js
+	// todo
 });
 
 
