@@ -16,7 +16,7 @@ $(function(){
  * 
  ******************************************************************************/
 function onDeviceReady() {
-	navigator.notification.alert("Let's vibrate", vibrate(1000), "Notice", "Oh yeah!")
+	navigator.notification.alert("Let's vibrate", asdf(1000), "Notice", "Oh yeah!")
 	
 }
 
@@ -25,6 +25,6 @@ function onDeviceReady() {
  * Vibrates the phone for given number of milliseconds
  * 
  ******************************************************************************/
-function vibrate(milliseconds) {
+function asdf(milliseconds) {
 	navigator.notification.vibrate(milliseconds);
 }
