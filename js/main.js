@@ -16,15 +16,21 @@ $(function(){
  * 
  ******************************************************************************/
 function onDeviceReady() {
-	navigator.notification.confirm(
-		"Let's vibrate",
-		function(button) {
-			if (button == 2) {
-				navigator.notification.vibrate(1000);
-			}
-		},
-		"Notice",
-		"No thanks :(, Oh yeah!");
+	
+	// test vibrate button
+	$('#vibrate-button').on('click', function() {
+		navigator.notification.vibrate(1000);
+	});
+	
+	// test beep button
+	$('#beep-button').on('click', function() {
+		navigator.notification.beep(1);
+	});
+	
+	// test alert button
+	$('#alert-button').on('click', function() {
+		navigator.notification.alert(device.name, null, 'Phone Info');
+	});
 }
 
 
