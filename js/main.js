@@ -29,7 +29,11 @@ function onDeviceReady() {
 	
 	// test alert button
 	$('#alert-button').on('click', function() {
-		navigator.notification.alert(device.name, null, 'Phone Info');
+		navigator.notification.alert('Device Name: '     + device.name     + '<br />' + 
+                            'Device PhoneGap: ' + device.phonegap + '<br />' + 
+                            'Device Platform: ' + device.platform + '<br />' + 
+                            'Device UUID: '     + device.uuid     + '<br />' + 
+                            'Device Version: '  + device.version  + '<br />', null, 'Phone Info');
 	});
 }
 
